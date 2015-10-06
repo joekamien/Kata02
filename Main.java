@@ -3,7 +3,6 @@ import java.util.*;
 public class Main {
 	
 	public static int chop(int target, int[] array){
-		System.out.println(Arrays.toString(array));
 		//handle base cases
 		if (array.length == 0){
 			return -1;
@@ -19,8 +18,6 @@ public class Main {
 		//if we reached here, then the array has at least two values
 		int halfwayPoint = array.length / 2;
 		int halfwayVal = array[halfwayPoint];
-		System.out.println(halfwayPoint);
-		System.out.println(halfwayVal);
 		
 		if (halfwayVal == target){
 			return halfwayPoint;
