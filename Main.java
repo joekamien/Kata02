@@ -7,6 +7,7 @@ public class Main {
 	}
 
 	public static int chop(int target, int[] array){
+		//handle base cases
 		if (array.length == 0){
 			return -1;
 		}else if (array.length == 1){
@@ -18,6 +19,7 @@ public class Main {
 			}
 		}
 		
+		//if we reached here, then the array has at least two values
 		int halfwayPoint = array.length / 2;
 		int halfwayVal = array[halfwayPoint];
 		
