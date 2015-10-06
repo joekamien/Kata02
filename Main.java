@@ -2,10 +2,6 @@ import java.util.*;
 
 public class Main {
 
-	public static void main(String[] args) {
-		
-	}
-
 	public static int chop(int target, int[] array){
 		//handle base cases
 		if (array.length == 0){
