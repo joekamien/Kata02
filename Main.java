@@ -15,19 +15,6 @@ public class Main {
 			}
 		}
 		
-		//if we reached here, then the array has at least two values
-		int halfwayPoint = array.length / 2;
-		int halfwayVal = array[halfwayPoint];
 		
-		if (halfwayVal == target){
-			return halfwayPoint;
-		} else if (halfwayVal < target){
-			//generate new array from top half of array and run recursively
-			return halfwayPoint + chop(target, Arrays.copyOfRange(array, halfwayPoint, array.length - 1));
-		}
-		else{
-			//generate new array from bottom half of array and run recursively
-			return chop(target, Arrays.copyOfRange(array, 0, halfwayPoint));
-		}
 	}
 }
